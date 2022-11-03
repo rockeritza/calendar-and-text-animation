@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    
+    }
+    
+    .one{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: gray;
+      border: 2px solid black;
+      
+      
+      
+    }
+    body{
+      max-width: 250px;
+      max-height: 100vh;
+    }
+   
+    
+    .element{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      color: white;
+      
+    
+    }
+      .element:after{
+      animation: rahul 3s linear infinite alternate;
+      content: ""
+      }
+      
+    
+
+    @keyframes rahul {
+      0%{
+        content: "LIFESTYLE";
+        background-color: green;
+      }
+      50%{
+        content: "WORK";
+        background-color: blue;
+      }
+      100%{
+        content: "EVERYTHING";
+        background-color: red;
+      }
+    }
+    
+  </style>
+</head>
+
+<body>
+  
+  <div class="one">MAKE' <span class="element"></span>' AWESOME!</div>
+
+</body>
+
+</html>
